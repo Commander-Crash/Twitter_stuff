@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Twitter Video Downloader
-// @namespace    https://example.com
+// @namespace    https://none.com
 // @version      1.0
 // @description  Adds a download button to Twitter videos for easy downloading.
-// @author       Your Name
+// @author       Commander Crash
 // @match        https://twitter.com/*
 // @grant        none
 // ==/UserScript==
@@ -48,6 +48,8 @@
             downloadButton.style.right = '10px';
             downloadButton.style.zIndex = '9999';
             downloadButton.style.cursor = 'pointer';
+            downloadButton.style.backgroundColor = 'green'; // Set green background color
+            downloadButton.style.fontWeight = 'bold'; // Set bold font weight
             downloadButton.addEventListener('click', function(event) {
                 event.preventDefault();
                 var videoUrl = mediaElement.src;
